@@ -1,0 +1,30 @@
+<head>
+  <title>Quick Todos</title>
+</head>
+
+<body>
+    <div class="container">
+      {{> main}}
+    </div>
+</body>
+
+<template name="main">
+  <header>
+    <h1>{{title}}</h1>
+    <form class="add-task">
+    <input type="text" name="text" placeholder="Add Task...">
+    </form>
+  </header>
+
+  <ul>
+  {{#each tasks}}
+    {{> task}}
+  {{/each}}
+  </ul>
+</template>
+
+
+<template name="task">
+  <li>{{text}}</li>
+</template>
+
