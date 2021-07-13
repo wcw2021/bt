@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://bootswatch.com/4/sandstone/bootstrap.min.css">
+  <title>RedisTodos</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="text-center"><%= title %></h1>
+    
+    <form action="/todo/add" method="post">
+      <input type="text" name="todo" placeholder="Add Todo..." class="form-control mb-3">
+    </form>
+    
+    <form action="/todo/delete" method="post">
+      <% todos.forEach(function(todo){ %>
+        <div class="card card-header bg-light mb-3">
+          <input type="checkbox" name="todos" value="<%= todo %>" class="delete">
+          <%= todo %>
+        </div>
+      <% }) %>
+      <input type="submit" value="Remove">
+    </form>
+
+  </div>
+
+
+</body>
+</html>
+
+
+
+
+
