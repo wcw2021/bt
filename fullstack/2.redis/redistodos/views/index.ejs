@@ -17,12 +17,14 @@
     
     <form action="/todo/delete" method="post">
       <% todos.forEach(function(todo){ %>
-        <div class="card card-header bg-light mb-3">
-          <input type="checkbox" name="todos" value="<%= todo %>" class="delete">
-          <%= todo %>
+        <div class="card bg-light mb-3">
+          <div class="card-body d-flex align-items-center">
+            <input type="checkbox" name="todos" value="<%= todo %>">
+            <div class="mx-2"><%= todo %></div>
+          </div>
         </div>
       <% }) %>
-      <input type="submit" value="Remove">
+      <input type="submit" value="Remove" class="btn btn-secondary">
     </form>
 
   </div>
