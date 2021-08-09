@@ -3,6 +3,7 @@ CREATE DATABASE mystore;
 CREATE TABLE customers(
 	id INT NOT NULL AUTO_INCREMENT,
 	first_name VARCHAR(255),
+	last_name VARCHAR(255),
 	email VARCHAR(255),
 	password VARCHAR(255),
 	street_address VARCHAR(255),
@@ -20,4 +21,4 @@ INSERT INTO customers(first_name, last_name, email, password, street_address, ci
 ('Janet', 'Thompson', 'janet@gmail.com', 'abcd', '123 Well st', 'Salisbury', 'MA', '01915'),
 ('Laurie', 'Jensen', 'ljensen@gmail.com', 'abcd', '55 School st', 'Boston', 'MA', '01294'),
 ('William', 'Samson', 'will@gmail.com', 'abcd', '334 Essex st', 'Brooklyn', 'NY', '37449'),
-('Stephanie', 'Johnson', 'steph@gmail.com', 'abcd', '49 Marks Ave', 'Queens', 'NY', '36455')
+('Stephanie', 'Johnson', 'steph@gmail.com', 'abcd', '49 Marks Ave', 'Queens', 'NY', '36455');

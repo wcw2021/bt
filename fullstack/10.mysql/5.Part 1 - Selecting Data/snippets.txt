@@ -16,6 +16,6 @@ SELECT * FROM customers WHERE city LIKE 'Bo%';
 
 SELECT * FROM customers WHERE city LIKE '%o%';
 
-SELECT * FROM customers WHERE city = 'Amesbury' OR 'Salisbury';
+SELECT * FROM customers WHERE city = 'Amesbury' OR city = 'Salisbury';
 
 SELECT * FROM customers WHERE city IN('Amesbury', 'Salisbury');
