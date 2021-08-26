@@ -15,7 +15,7 @@ db.projects.find({cost: {$lte: 10000}}).pretty();
 
 // $in
 db.projects.find({
-	category: {$in:['Web Deisgn', 'Web Programming']}
+	category: {$in:['Web Design', 'Web Programming']}
 }).pretty();
 
 // $and - $or
@@ -31,3 +31,7 @@ db.projects.aggregate([{$match: {name: 'Company Website'}}]);
 db.projects.aggregate([
 	{$project: {projectDescription:{$concat:["$name"," - ", "$category"]}}}
 ]);
+
+
+
+

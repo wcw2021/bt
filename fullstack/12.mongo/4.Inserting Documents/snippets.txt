@@ -6,7 +6,7 @@ db.projects.insert({
 	developers: [
 		{
 			name:'Brad Traversy',
-			role: 'Head Programmer'		
+			role: 'Head Programmer'
 		},
 		{
 			name:'John Doe',
@@ -30,7 +30,7 @@ db.projects.insert([
 	developers: [
 		{
 			name:'Tara Harris',
-			role: 'Head Programmer'		
+			role: 'Head Programmer'
 		},
 		{
 			name:'Will Thompson',
@@ -56,7 +56,7 @@ db.projects.insert([
 	developers: [
 		{
 			name:'Jake Bloom',
-			role: 'Head Programmer'		
+			role: 'Head Programmer'
 		},
 		{
 			name:'Mike George',
@@ -82,7 +82,7 @@ db.projects.insert([
 	developers: [
 		{
 			name:'Paul Rogers',
-			role: 'Head Programmer'		
+			role: 'Head Programmer'
 		},
 		{
 			name:'Bret Henry',
@@ -97,4 +97,5 @@ db.projects.insert([
 	cost: 12000
 }
 ]);
+
 

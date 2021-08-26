@@ -6,7 +6,7 @@ db.projects.insert({
   developers: [
     {
       name:'Brad Traversy',
-      role: 'Head Programmer'   
+      role: 'Head Programmer'
     },
     {
       name:'John Doe',
@@ -30,7 +30,7 @@ db.projects.update({name:'Test Project'},{
   developers: [
     {
       name:'Brad Traversy',
-      role: 'Head Programmer'   
+      role: 'Head Programmer'
     },
     {
       name:'John Doe',
