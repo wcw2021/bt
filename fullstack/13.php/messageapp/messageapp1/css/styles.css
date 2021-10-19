@@ -1,0 +1,33 @@
+body{
+	font-family:Arial;
+	background:#f4f4f4;
+	color:#666;
+}
+
+input[type='text']{
+	margin: 3px;
+	padding: 5px;
+	border-radius:5px;
+	border:1px #666 solid;
+}
+
+#btn{
+	margin: 5px;
+	padding: 3px;
+}
+
+ul.messages{
+	margin:0;
+	padding:0;
+}
+
+ul.messages li{
+	padding: 5px;
+	margin: 5px;
+	list-style: none;
+	background:#f9f9f9;
+}
+
+footer{
+	margin-top:40px;
+}
